@@ -10,7 +10,7 @@ A plataforma Decor. Nadiany é uma plataforma acompanhante de uma decoradora de 
 * Depoimentos de Clientes: Exibição de depoimentos positivos de clientes anteriores, aumentando a credibilidade.
 
 ### 😉Vantagens
-#### Conveniência e Acessibilidade
+#### 😕Conveniência e Acessibilidade
 * Acesso 24/24: Os clientes podem acessar o site a qualquer hora do dia ou da noite, sem se preocupar com horários de atendimento.
 * Informações Completas: Encontrarão todas as informações necessárias sobre os serviços oferecidos, portfólio, equipe, contato e localização.
 * Agendamento Online: A possibilidade de agendar consultas ou visitas técnicas diretamente pelo site economiza tempo e facilita a comunicação.
