@@ -1,0 +1,660 @@
+body{
+    min-height: 400px;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Dancing Script", cursive;
+}
+
+.slider-back{
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+
+.slider{
+    font-family: "Dancing Script", cursive;
+    font-size: 22px;
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+
+}
+
+.img-slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+    background-color: black; 
+}
+
+.slide img{
+    width: 100%;
+}
+
+.manual-navegacao{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn{
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+.navegacao-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navegacao-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao-auto div:not(:last-child){
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .navegacao-auto .auto-btn1{
+    background-color: rgb(248, 89, 116);
+}
+
+#radio2:checked ~ .navegacao-auto .auto-btn2{
+    background-color: rgb(248, 89, 116);
+}
+
+#radio3:checked ~ .navegacao-auto .auto-btn3{
+    background-color: rgb(248, 89, 116);
+}
+
+.tab-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    box-shadow: 4px 6px 6px 0px rgba(0, 0, 0, .7)
+}
+
+.logo  h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.linkes ul{
+    display: flex;
+    flex-direction: row;
+    font-family: "Dancing Script", cursive;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.linkes ul li{
+    margin-right: 50px;
+    list-style: none;
+}
+
+.linkes ul li a{
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.linkes ul li a:hover{
+    color: rgb(248, 89, 116);
+}
+
+h2 span{
+    color: rgb(248, 89, 116);
+}
+h3 span{
+    color: rgb(248, 89, 116);
+}
+
+
+.textImg{
+    position: absolute;
+    right: 150px;
+    margin-top: 150px;
+    width: 30%;
+    text-align: end;
+    color: white;
+}
+
+.textImg1{
+    position: absolute;
+    margin-top: 150px;
+    width: 30%;
+    text-align: start;
+    margin-left: 150px;
+    color: white;
+}
+
+.textImg2{
+    position: absolute;
+    margin-top: 150px;
+    width: 30%;
+    text-align: center;
+    margin-left: 35%;
+    color: white;
+}
+
+.body-conteudo{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.introduction{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-family: "Dancing Script", cursive;
+}
+
+p{
+    font-size: 27px;
+    font-weight: bolder;
+}
+
+.pub-img{
+    font-family: "Dancing Script", cursive;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.ImagemPub{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.imgpub{
+    width: 300px;
+    margin: auto;
+}
+
+.imgpub:hover{
+    cursor: pointer;
+}
+
+.description , .logopub, .quant-pub{
+    position: absolute;
+    max-width:  300px;
+    min-width: 300px;
+    height: 300px;
+    text-align: center;
+    color: white;  
+    display: flex;
+    overflow: hidden;
+}
+
+.quant-pub h5{
+    margin-top: 150px;
+    color: black;
+    margin-left: 75%;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.logopub h3{
+    background-color: rgba(102, 102, 102, 0.6);
+    height: 25px;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.description h3{
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    margin-top: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    background-color: rgba(102, 102, 102, 0.6);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#Elemento-Principal{
+    opacity: 1;
+    margin-left: 20px;
+    font-size: 13pt;
+    text-align: center;
+    overflow: hidden;
+    transition: 1s;
+    line-height: 20px;
+}
+
+.footer{
+    border-top: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Dancing Script", cursive;
+
+}
+
+.footer p{
+    color: rgb(95, 95, 95);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.imgFooter{
+    width: 25px;
+    cursor: pointer;
+}
+
+.imgFooter1{
+    width: 25px;
+    cursor: pointer;
+}
+
+.imgFooter1:hover{
+    transform: translateY(-5px);
+    transition: 1s;
+}
+
+.imgFooter:not(:last-child){
+    padding-right: 20px;
+}
+
+.description2{
+    position: absolute;
+    max-width:  300px;
+    min-width: 300px;
+    height: 300px;
+    text-align: center;
+    color: white;  
+    display: flex;
+    overflow: hidden;
+}
+
+.imgpub2{
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 300px;
+    background-color: #e2e8f0;
+    cursor: pointer;
+  }
+  .description2::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+      90deg,
+      rgba(37, 36, 36, 0) 0,
+      rgba(74, 73, 73, 0.2) 20%,
+      rgba(105, 104, 104, 0.5) 60%,
+      rgba(255, 255, 255, 0)
+    );
+    animation: skeletonProduct 3s infinite;
+    content: '';
+  }
+  @keyframes skeletonProduct{
+    100%{
+      transform: translateX(100%);
+    }
+  }
+
+
+
+/*  Responsividade para tablets! */
+@media screen and (min-width:767px) and (max-width:1023px){
+       
+    .tab-bar{
+        width: 100%;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        box-shadow: 4px 6px 6px 0px rgba(0, 0, 0, .7);
+    }
+
+    .logo{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logoSeting{
+        width: 50px;
+        height: 50px;
+        background-color: rgba(99, 98, 98, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        border-radius: 7px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .logoSeting img{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .logo  h2{
+        margin-left: 20px;
+    }
+
+    .linkes ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .linkes ul li{
+        margin-right: 50px;
+        padding: 10px;
+        list-style: none;
+    }
+
+    .linkes{
+        width: 100%;
+        height: 0px;
+        transition: 1s;
+    }
+
+    .help{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .close{
+        width: 50px;
+        height: 50px;
+        background-color: rgba(99, 98, 98, 0.4);
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        border-radius: 7px;
+        cursor: pointer;
+        margin-right: 20px;
+        display: none;
+        transition: 10s;
+    }
+
+    .close img{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .textImg{
+        position: absolute;
+        margin-top: 100px;
+        width: 80%;
+        right: 10%;
+        text-align: end;
+        color: white;
+    }
+
+    .textImg1{
+        position: absolute;
+        margin-top: 100px;
+        width: 80%;
+        text-align: start;
+        margin-left: 10%;
+        color: white;
+    }
+
+    .textImg2{
+        position: absolute;
+        margin-top: 100px;
+        width: 80%;
+        text-align: center;
+        right: 10%;
+        color: white;
+    }
+}
+
+  /*Responsividade para telas Desktops */
+  @media screen and (min-width:1024px){
+    .logoSeting{
+        background-color: rgb(248, 89, 116);
+        padding: 10px;
+        border-radius: 7px;
+        color: white;
+        margin-right: 10px;
+        cursor: pointer;
+        display: none;
+    }
+    .close{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: rgb(95, 94, 94);
+        padding: 10px;
+        border-radius: 7px;
+        color: white;
+        margin-right: 10px; 
+        cursor: pointer;
+        display: none;
+        transition: 10s;
+        display: none;
+    }
+    .textImg{
+        position: absolute;
+        margin-top: 100px;
+        width: 50%;
+        right: 10%;
+        text-align: end;
+        color: white;
+    }
+
+    .textImg1{
+        position: absolute;
+        margin-top: 100px;
+        width: 50%;
+        text-align: start;
+        margin-left: 10%;
+        color: white;
+    }
+
+    .textImg2{
+        position: absolute;
+        margin-top: 100px;
+        width: 50%;
+        text-align: center;
+        right: 25%;
+        color: white;
+    }
+  }
+ 
+  /* Responsividade para telas de celulares */
+@media screen and (min-width:300px) and (max-width:767px) {
+    .tab-bar{
+        width: 100%;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        box-shadow: 4px 6px 6px 0px rgba(0, 0, 0, .7);
+    }
+
+    .logo{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logoSeting{
+        width: 50px;
+        height: 50px;
+        background-color: rgba(99, 98, 98, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        border-radius: 7px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .logoSeting img{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .logo  h2{
+        margin-left: 20px;
+    }
+
+    .linkes ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .linkes ul li{
+        margin-right: 50px;
+        padding: 10px;
+        list-style: none;
+    }
+
+    .linkes{
+        width: 100%;
+        height: 0px;
+        transition: 1s;
+    }
+
+    .help{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .close{
+        width: 50px;
+        height: 50px;
+        background-color: rgba(99, 98, 98, 0.4);
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        border-radius: 7px;
+        cursor: pointer;
+        margin-right: 20px;
+        display: none;
+        transition: 10s;
+    }
+
+    .close img{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .textImg{
+        position: absolute;
+        margin-top: 50px;
+        width: 90%;
+        right: 5%;
+        text-align: end;
+        color: white;
+    }
+
+    .textImg1{
+        position: absolute;
+        margin-top: 50px;
+        width: 90%;
+        text-align: start;
+        margin-left: 5%;
+        color: white;
+    }
+
+    .textImg2{
+        position: absolute;
+        margin-top: 50px;
+        width: 90%;
+        text-align: center;
+        right: 5%;
+        color: white;
+    }
+
+    .slide img{
+        width: 100%;
+        height: 400px;
+    }
+
+
+}

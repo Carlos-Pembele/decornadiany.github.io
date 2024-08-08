@@ -1,0 +1,488 @@
+.element-information{
+    position: absolute;
+    margin-top: 100px;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    color: white;
+    font-size: 24px;
+    font-family: "Dancing Script", cursive;
+}
+
+.descri{
+    color: rgb(211, 208, 208);
+}
+
+.set{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.set input{
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(250, 234, 234, 0.2);
+    font-family: "Dancing Script", cursive;
+    color: rgb(211, 208, 208);
+    font-size: 17px;
+}
+
+.set input::placeholder{
+    color: rgb(211, 208, 208);
+    font-size: 17px;
+    font-family: "Dancing Script", cursive;
+}
+
+.btn p{
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-size: 17px;
+    background-color: rgb(248, 89, 116);
+    padding: 10px 60px; 
+    border-radius: 20px; 
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.contact{
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: "Dancing Script", cursive;
+}
+
+.coment-esq{
+    margin-left: 10%;
+    width: 40%;
+}
+
+.coment-dir{
+    margin-right: 10%;
+    width: 40%;
+}
+
+.atendimento{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(211, 208, 208);
+    border-radius: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.atendimento img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+
+}
+
+.title{
+    color: rgb(248, 89, 116);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.icon-contact{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+.coment-esq h3{
+    text-align: center;
+    color: rgb(248, 89, 116);
+}
+
+.depoiment{
+    text-align: center;
+    background-color: rgb(211, 208, 208);
+    padding: 20px;
+    border-radius: 20px;
+    width: 22%;
+    position: relative;
+    transition: 2s;
+}
+
+.depoiment:not(:last-child){
+    margin-right: 23px;
+}
+
+.depoiment p{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.depoiment img{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+.depoiment h3{
+    color: rgb(248, 89, 116);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.scroll-element{
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    height: 250px;
+}
+
+.scroll-element-one{
+    width: 400%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-element-one input{
+    display: none;
+}
+
+.notRemot-navigation{
+    position: absolute;
+    width: 37%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.notRemot{
+    border: 2px solid rgb(248, 89, 116);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.notRemot:not(:last-child){
+    margin-right: 10px;
+}
+
+.notRemot:hover{
+    background-color: rgb(248, 89, 116);
+}
+
+
+#rad1:checked ~ .first{
+    margin-left: 10px;
+}
+
+#rad2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#rad3:checked ~ .first{
+    margin-left: -50%;
+}
+
+/*  Responsividade para tablets! */
+@media screen and (min-width:767px) and (max-width:1023px){
+
+    .element-information{
+        position: absolute;
+        margin-top: 150px;
+        width: 90%;
+        text-align: center;
+        margin-left: 5%;
+        color: white;
+    }
+    
+    .descri{
+        color: rgb(211, 208, 208);
+    }
+    
+    .set{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .set input{
+        padding: 10px 40px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgba(250, 234, 234, 0.2);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(211, 208, 208);
+    }
+    
+    .set input::placeholder{
+        color: rgb(211, 208, 208);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .btn p{
+        color: white;
+        background-color: rgb(248, 89, 116);
+        padding: 10px 60px; 
+        border-radius: 20px; 
+    }
+    
+    .btn{
+        cursor: pointer;
+    }
+    
+    .contact{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }  
+        
+    .coment-esq{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+
+    .coment-dir{
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 100%;
+    }
+
+    .atendimento img{
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+    }
+
+    .depoiment{
+        text-align: center;
+        background-color: rgb(211, 208, 208);
+        padding: 20px;
+        border-radius: 20px;
+        width: 22%;
+        position: relative;
+        transition: 2s;
+    }
+
+    .depoiment:not(:last-child){
+        margin-right: 40px;
+    }
+
+    .depoiment p{
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .depoiment img{
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+    }
+
+    .scroll-element{
+        margin: 0 auto;
+        width: 90%;
+        overflow: hidden;
+        height: 250px;
+    }
+
+    .notRemot-navigation{
+        position: absolute;
+        width: 84%;
+        margin: 1px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .notRemot:not(:last-child){
+        margin-right: 30px;
+    }
+
+    #rad1:checked ~ .first{
+        margin-left: 1%;
+    }
+
+    #rad2:checked ~ .first{
+        margin-left: -24%;
+    }
+
+    #rad3:checked ~ .first{
+        margin-left: -49%;
+    }
+    .first{
+        margin-left: 20px;
+    }
+
+}
+
+
+  /* Responsividade para telas de celulares */
+@media screen and (min-width:300px) and (max-width:767px) {
+    .element-information{
+        position: absolute;
+        margin-top: 100px;
+        width: 98%;
+        text-align: center;
+        margin-left: 1%;
+        color: white;
+        font-size: 18px;
+    }
+    
+    .descri{
+        color: rgb(211, 208, 208);
+    }
+    
+    .set{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .set input{
+        position: relative;
+        width: 30%;
+        padding: 10px 2px;
+        border-radius: 1px;
+        border: none;
+        background-color: rgba(250, 234, 234, 0.2);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(211, 208, 208);
+    }
+    
+    .set input::placeholder{
+        color: rgb(211, 208, 208);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .btn p{
+        color: white;
+        background-color: rgb(248, 89, 116);
+        padding: 10px 20px; 
+        border-radius: 20px; 
+    }
+    
+    .btn{
+        cursor: pointer;
+    }
+    
+    .contact{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .atendimento h3{
+        font-size: 16px;
+    }
+        
+    .coment-esq{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+
+    .coment-dir{
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 100%;
+    }
+
+    .atendimento img{
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+    }
+
+    .depoiment{
+        text-align: center;
+        background-color: rgb(211, 208, 208);
+        padding: 20px;
+        border-radius: 20px;
+        width: 21%;
+        position: relative;
+        transition: 2s;
+    }
+
+    .depoiment:not(:last-child){
+        margin-right: 40px;
+    }
+
+    .depoiment p{
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .depoiment img{
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+    }
+
+    .scroll-element{
+        margin: 0 auto;
+        width: 90%;
+        overflow: hidden;
+        height: 250px;
+    }
+
+    .notRemot-navigation{
+        position: absolute;
+        width: 84%;
+        margin: 1px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .notRemot:not(:last-child){
+        margin-right: 30px;
+    }
+
+    #rad1:checked ~ .first{
+        margin-left: 1%;
+    }
+
+    #rad2:checked ~ .first{
+        margin-left: -27%;
+    }
+
+    #rad3:checked ~ .first{
+        margin-left: -54%;
+    }
+    .first{
+        margin-left: 10px;
+    }
+
+    .notRemot-navigation{
+    margin-top: 10px;
+    }
+    .icon-contact{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        margin-right: 10px;
+    }
+
+}
